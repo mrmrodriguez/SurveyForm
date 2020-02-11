@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="surveyForm.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+<div id="background">
+	<img src="https://i.ibb.co/T0CFcHL/photo-1447244236161-6d00eb5bfaee.jpg" class="stretch" />
+</div>
+
+<section class="container"> 
+
+	<form id="survey-form" class="right">
+
+		<div class="form-header">
+		
+			<h1 id="title">Survey Form</h1>
+			
+			<p id="description">Lorem Ipsum is simply dummy text of the printing</p>
+		</div>
+
+		<div>
+			<label id="name-label" for="name">Name</label>
+			<input class="info nam-label" type="text" name="name" id="name" placeholder="Name" autocomplete="off"required /><br>
+
+			<label id="email-label" for="email">Email</label>
+			<input class="info em-label" type="email" name="email" id="email" placeholder="Email" autocomplete="off"required /><br>
+
+			<label id="number-label" for="age">Age</label>
+			<input class="info age-label" type="number" name="name" id="number" placeholder="Age" min="0" max="200" autocomplete="off"required /><br>
+		</div>
+
+		<div class="question birthday">
+			<label for="select-choice"><i class="fas fa-birthday-cake"></i> Birthday:</label>
+			<select name="select-choice" id="dropdown">
+			<option value="0" selected disabled>Month</option>
+	        <option value="january">Jan</option>
+	        <option value="february">Feb</option>
+	        <option value="march">Mar</option>
+	        <option value="april">Apr</option>
+	        <option value="may">May</option>
+	        <option value="june">Jun</option>
+	        <option value="july">Jul</option>
+	        <option value="august">Aug</option>
+	        <option value="september">Sep</option>
+	        <option value="october">Oct</option>
+	        <option value="november">Nov</option>
+	        <option value="december">Dec</option>
+	      </select>
+
+	      <select name="birthday-day" id="day">
+	      	<option value="0" selected disabled>Day</option>
+	        <option value="1">1</option>
+	        <option value="2">2</option>
+	        <option value="3">3</option>
+	        <option value="4">4</option>
+	        <option value="5">5</option>
+	        <option value="6">6</option>
+	        <option value="7">7</option>
+	        <option value="8">8</option>
+	        <option value="9">9</option>
+	        <option value="10">10</option>
+	        <option value="11">11</option>
+	        <option value="12">12</option>
+	        <option value="13">13</option>
+	        <option value="14">14</option>
+	        <option value="15">15</option>
+	        <option value="16">16</option>
+	        <option value="17">17</option>
+	        <option value="18">18</option>
+	        <option value="19">19</option>
+	        <option value="20">20</option>
+	        <option value="21">21</option>
+	        <option value="22">22</option>
+	        <option value="23">23</option>
+	        <option value="24">24</option>
+	        <option value="25">25</option>
+	        <option value="26">26</option>
+	        <option value="27">27</option>
+	        <option value="28">28</option>
+	        <option value="29">29</option>
+	        <option value="30">30</option>
+	        <option value="31">31</option>
+	      </select>
+	  </div>
+
+	  <div class="question">
+	  	<p>How long have you been programming?</p>
+	  	<div>
+	  		<input type="radio" name="radio-buttons" value="1">
+	  		<label for="1">0 to 2 years</label>
+	  	</div>
+	  	<div>
+	  		<input type="radio" name="radio-buttons" value="2">
+	  		<label for="2">2 to 5 years</label>
+	  	</div>
+	  	<div>
+	  		<input type="radio" name="radio-buttons" value="3">
+	  		<label for="3">5 to 10 years</label>
+	  	</div>
+	  	<div>
+	  		<input type="radio" name="radio-buttons" value="4">
+	  		<label for="4">10+ years</label>
+	  	</div>
+	  </div>
+
+	  <div class="question">
+	  	<p>What sources have you used on your journey while learning to program?</p>
+	  	<div>
+	  		<input type="checkbox" class="checkboxes" value="high-school" id="high-school" name="checkbox">
+	  		<label for="high-school">High School/Grade School</label>
+	  	</div>
+	  	<div>
+	  		<input type="checkbox" class="checkboxes" value="college" id="college" name="checkbox">
+	  		<label for="college">College</label>
+	  	</div>
+	  	<div>
+	  		<input type="checkbox" class="checkboxes" value="bootcamp" id="bootcamp" name="checkbox">
+	  		<label for="bootcamp">Bootcamp</label>
+	  	</div>
+	  	<div>
+	  		<input type="checkbox" class="checkboxes" value="online-course" id="online-course" name="checkbox">
+	  		<label for="online-course">Online Course</label>
+	  	</div>
+	  	<div>
+	  		<input type="checkbox" class="checkboxes" value="mentorship" id="mentorship" name="checkbox">
+	  		<label for="mentorship">Mentorship</label>
+	  	</div>
+	  	<div>
+	  		<input type="checkbox" class="checkboxes" value="textbooks" id="textbooks" name="checkbox">
+	  		<label for="textbooks">Textbooks/Research</label>
+	  	</div>
+	  	<div>
+	  		<input type="checkbox" class="checkboxes" value="building" id="building" name="checkbox">
+	  		<label for="building">Building Projects</label>
+	  	</div>
+	  </div>
+
+	  <div class="question">
+	  	<label>What advice would you give to beginner programmers?:</label><br>
+	  	<textarea id="advice" for="advice" rows="5" cols="33">Enter advice here...
+	  	</textarea>
+	  </div>
+
+	  <div>
+	  	<button type="submit" id="submit">Submit<i class="fas fa-long-arrow-alt-right"></i></button>
+	  </div>
+	</form>
+</section>
+<script type="text/javascript" src="surveyForm.js"></script>
+</body>
+</html>
